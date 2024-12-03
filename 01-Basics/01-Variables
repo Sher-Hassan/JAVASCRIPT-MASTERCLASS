@@ -2,3 +2,5 @@ const accountId = 1233
 let accountEmail = "sher@gmail.com"
 var accountPassword = "12345"
 accountCity = "New York"
+
+console.log(accountId)
