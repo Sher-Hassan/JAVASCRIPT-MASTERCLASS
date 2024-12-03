@@ -3,4 +3,10 @@ let accountEmail = "sher@gmail.com"
 var accountPassword = "12345"
 accountCity = "New York"
 
+// accountId = 333 not allowed
+
+accountEmail = "ser2@gmail.com"
+accountPassword = "123456"
+accountCity = "Los Angeles"
+
 console.log(accountId)
