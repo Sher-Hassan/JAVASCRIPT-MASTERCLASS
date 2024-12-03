@@ -11,3 +11,20 @@ let state = null
 console.log(typeof name)
 
 console.log(typeof null) // object
+
+//primitive data types
+// string, int, boolean, null, undefined, symbol, bigint
+
+// In primitive data we get a copy and the origiona value is not changed
+
+let name2 = name
+name2 = "sherHassan"
+console.log(name, name2) // sher sherHassan
+//name is not changed
+
+//non-primitive data types
+// object, array, function
+let obj = {
+    name: "sher",
+    age: 18
+}
