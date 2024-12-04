@@ -54,3 +54,4 @@ const myn2 = myArr.splice(1, 4); // from 1 to 3 and 4 will be included and the o
 
 console.log("A", myArr);
 console.log("B", myn2);
+
