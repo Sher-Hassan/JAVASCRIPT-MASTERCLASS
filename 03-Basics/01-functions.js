@@ -41,5 +41,45 @@ function loginUserMessage(username = "default") {
     return `Welcome ${username}`;
 }
 
-let msg = loginUserMessage("John");
-console.log(msg);
+// let msg = loginUserMessage("John");
+// console.log(msg);
+
+// if number of parameters are umknown then use rest operator which means it will take all the parameters and put them in an array
+
+function AllNumbers(...numbers) {
+    return numbers
+}
+
+// console.log(AllNumbers(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+function AllNumbers2(val1, val2, ...num){
+    return num
+} // IN this case val1 and val2 will be assigned to the first two values and the rest of the values will be put in an array and assigned to num
+
+console.log(AllNumbers2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)); // [3, 4, 5, 6, 7, 8, 9, 10]
+
+//  Using objects in functons
+
+const user = {
+    name: "John",
+    age: 30
+}
+
+function handleObject(obj){
+    // console.log(`Hello ${obj.name}, you are ${obj.age} years old`);
+}
+
+handleObject(user);
+//or
+handleObject({
+    name: "Jane",
+    age: 25
+});
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function returnSecondElement(myarr){
+ return myarr[1];   
+}
+
+console.log(returnSecondElement(arr)); // 2
